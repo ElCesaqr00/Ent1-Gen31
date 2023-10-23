@@ -25,15 +25,45 @@
     font-weight: 300;
 }
 .app__btn{
-    display: block;
+    background: #fff; 
+    color: #000000; 
+    border: none; 
     margin: auto;
     margin-top: 1em;
     padding: 0.8em 2em;
     font-size: 1rem;
-    border-radius: 2em;
-    transition: font-size 100ms ease;
+    border-radius: 3px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: block;
 }
 .app__btn:hover{
-
-    font-size: 1.1rem;
+    color: #fff;
+}
+.app__btn::after {
+    content: "";
+    background: #d76641;
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 100%;
+    bottom: -100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+}
+  .app__btn:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+}
+  h1{
+    font-style: bold;
+    font-size: 50px;
 }
