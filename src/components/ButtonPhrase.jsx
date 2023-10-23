@@ -1,4 +1,4 @@
-import getRandomFromArr from '../services/GetRandomFromArr'
+import getRandomFromArr from '../services/getRandomFromArr'
 import phrases from '../utils/phrases.json'
 import bgArr from '../utils/bgArr.json'
 
